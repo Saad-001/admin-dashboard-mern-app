@@ -10,10 +10,6 @@ import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 
-// data import
-// import { dataAffiliateStat } from "./data/index.js";
-// import AffiliateStat from "./models/AffiliateStat.js";
-
 // configaration
 
 dotenv.config();
@@ -49,7 +45,6 @@ mongoose
     app.listen(PORT, () => {
       console.log(`connected to server port: ${PORT}`);
     });
-    // AffiliateStat.insertMany(dataAffiliateStat);
   })
   .catch((err) => {
     console.log(`${err} did not connect`);
